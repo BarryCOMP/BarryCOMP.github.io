@@ -10,6 +10,8 @@ The site highlights research experience in:
 - Retrieval-augmented generation
 - Computer systems and AI infrastructure
 
+The site provides downloadable copies of the CV and academic transcript.
+
 Once this repository is pushed to `BarryCOMP.github.io`, the page will be available at:
 
 ```text
