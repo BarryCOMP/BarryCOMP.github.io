@@ -3,162 +3,162 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Yucheng Bao - prospective PhD applicant interested in LLM inference optimization, KV cache compression, and computer systems.">
+  <meta name="description" content="Yucheng Bao - MSc student in Computer Science at CUHK, interested in LLM inference optimization and computer systems.">
   <title>Yucheng Bao</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="#top">Yucheng Bao</a>
-      <div class="nav-links">
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="site-title" href="#top">Yucheng Bao</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
         <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#awards">Awards</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Prospective PhD Applicant · Computer Systems · LLM Inference</p>
-        <h1>Building efficient systems for large language model inference.</h1>
-        <p class="lead">
-          I am Yucheng Bao, a MSc Computer Science student at The Chinese University of Hong Kong and a first-class BSc Computing graduate from The Hong Kong Polytechnic University. My work focuses on LLM inference optimization, KV cache compression, heterogeneous accelerator systems, and retrieval-augmented generation.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="assets/CV_BAOYucheng.pdf">Download CV</a>
-          <a class="button" href="assets/Transcript_BAOYucheng.pdf">Download Transcript</a>
-          <a class="button subtle" href="mailto:yucheng.bao@connect.polyu.hk">Email Me</a>
-        </div>
-      </div>
-      <aside class="hero-panel" aria-label="Research profile">
-        <div class="metric">
-          <span class="metric-value">40%</span>
-          <span class="metric-label">KV cache compressed to 40% of original size while preserving output quality</span>
-        </div>
-        <div class="metric">
-          <span class="metric-value">47%</span>
-          <span class="metric-label">CPU load reduction in Huawei FlexNPU resource sharing system</span>
-        </div>
-        <div class="metric">
-          <span class="metric-value">1st</span>
-          <span class="metric-label">Prize in ASC 2024 Student Supercomputer Challenge</span>
-        </div>
-      </aside>
-    </section>
+  <main class="page" id="top">
+    <aside class="sidebar">
+      <div class="profile-card">
+        <div class="avatar" aria-hidden="true">YB</div>
+        <h1>Yucheng Bao</h1>
+        <p class="role">MSc Student in Computer Science</p>
+        <p class="affiliation">The Chinese University of Hong Kong</p>
+        <p class="affiliation">BSc Computing, The Hong Kong Polytechnic University</p>
 
-    <section class="section intro">
-      <div>
-        <h2>Research Interests</h2>
-        <p>
-          My current interests sit at the intersection of machine learning systems and computer systems: compression-aware LLM serving, accelerator-aware scheduling, memory-efficient inference, and domain-specific RAG systems.
-        </p>
-      </div>
-      <div class="interest-grid" id="research">
-        <article>
-          <h3>LLM Inference Optimization</h3>
-          <p>KV cache compression, vLLM-based serving, FlashAttention interfaces, perplexity-quality evaluation, and memory-efficient decoding.</p>
-        </article>
-        <article>
-          <h3>Heterogeneous Systems</h3>
-          <p>NPU resource sharing, CANN API interception, RPC, shared memory transmission, thread scheduling, and elastic accelerator utilization.</p>
-        </article>
-        <article>
-          <h3>RAG and AI Infrastructure</h3>
-          <p>Document parsing, OCR, embedding models, vector databases, hybrid retrieval, and domain-specific question answering.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="section-heading">
-        <p class="eyebrow">Selected Work</p>
-        <h2>Research and Engineering Projects</h2>
-      </div>
-      <div class="project-list">
-        <article class="project">
-          <div class="project-date">Nov 2024 - Apr 2025</div>
-          <div>
-            <h3>LLM Inference Optimization via KV Cache Compression</h3>
-            <p class="project-role">Final Year Project · PolyU · vLLM, cuSZp, FlashAttention</p>
-            <p>
-              Evaluated cuSZp compression components including quantization, prediction, fixed-length encoding, global synchronization, and block bit-shuffle. Modified FlashAttention interfaces to integrate compression without changing vLLM kernels, then evaluated WikiText-103 perplexity under different compression ratios and error bounds.
-            </p>
-            <p class="outcome">Outcome: compressed KV cache to 40% of the original size while maintaining output quality.</p>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-date">Oct 2025 - Jun 2026</div>
-          <div>
-            <h3>FlexNPU Resource Sharing System</h3>
-            <p class="project-role">Research Intern · Huawei Hong Kong Research Center, Theory Lab · NPU, CUDA, RPC, Shared Memory</p>
-            <p>
-              Implemented a shared memory transmission model with global control, slot metadata, and small/large data planes. Built a thread-local client reuse mechanism and refactored the server execution model with polling and adaptive worker threads.
-            </p>
-            <p class="outcome">Outcome: reduced server CPU load from 300% to 160%, with only 3.87% LLM inference throughput decrease.</p>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-date">May 2024 - Sep 2024</div>
-          <div>
-            <h3>Retrieval-Augmented Generation for Embodied Carbon Analysis</h3>
-            <p class="project-role">Research Assistant · PolyU Faculty of Engineering · OCR, DocX Chain, Embeddings, Vector Databases</p>
-            <p>
-              Built a domain-specific QA pipeline for embodied carbon analysis of computing devices. Implemented document extraction, embedding evaluation, vector retrieval, keyword search, and a computational module for CPU, memory, and storage carbon values.
-            </p>
-            <p class="outcome">Outcome: produced a short publication, DOI <a href="https://doi.org/10.1145/3671127.3698699">10.1145/3671127.3698699</a>.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section education-awards" id="awards">
-      <div>
-        <p class="eyebrow">Education</p>
-        <h2>Academic Background</h2>
-        <div class="timeline">
-          <article>
-            <span>2025 - 2026</span>
-            <h3>The Chinese University of Hong Kong</h3>
-            <p>MSc in Computer Science</p>
-          </article>
-          <article>
-            <span>2021 - 2025</span>
-            <h3>The Hong Kong Polytechnic University</h3>
-            <p>BSc (Hons) Scheme in Computing, First Class Honors. Minor in Applied Mathematics. Overall weighted GPA: 3.62/4.3.</p>
-          </article>
-        </div>
-      </div>
-      <div>
-        <p class="eyebrow">Recognition</p>
-        <h2>Awards</h2>
-        <ul class="award-list">
-          <li>Hong Kong Government Scholarship - Talent Development Scholarship</li>
-          <li>Dean's Honor List, Faculty of Engineering, PolyU</li>
-          <li>ASC 2024 Student Supercomputer Challenge First Prize</li>
-          <li>ASC 2024 Student Supercomputer Challenge Group Award</li>
-          <li>Outstanding Student, Artificial Intelligence Training Camp, Shanghai Jiao Tong University</li>
-          <li>Chinese Physics Olympiad Second Prize</li>
+        <ul class="profile-links">
+          <li><a href="mailto:yucheng.bao@connect.polyu.hk">Email</a></li>
+          <li><a href="mailto:1155247210@link.cuhk.edu.hk">CUHK Email</a></li>
+          <li><a href="https://github.com/BarryCOMP">GitHub</a></li>
+          <li><a href="assets/CV_BAOYucheng.pdf">CV</a></li>
+          <li><a href="assets/Transcript_BAOYucheng.pdf">Transcript</a></li>
         </ul>
       </div>
-    </section>
+    </aside>
 
-    <section class="section contact" id="contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Let's talk about PhD opportunities, LLM systems, and efficient AI infrastructure.</h2>
-      </div>
-      <div class="contact-links">
-        <a href="mailto:yucheng.bao@connect.polyu.hk">yucheng.bao@connect.polyu.hk</a>
-        <a href="mailto:1155247210@link.cuhk.edu.hk">1155247210@link.cuhk.edu.hk</a>
-        <a href="https://github.com/BarryCOMP">GitHub: BarryCOMP</a>
-      </div>
-    </section>
+    <article class="content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a MSc student in Computer Science at The Chinese University of Hong Kong. Before that, I received my BSc (Hons) in Computing with First Class Honors from The Hong Kong Polytechnic University, with a minor in Applied Mathematics.
+        </p>
+        <p>
+          My research interests are in machine learning systems and computer systems, especially efficient large language model inference, KV cache compression, heterogeneous accelerator scheduling, and retrieval-augmented generation systems.
+        </p>
+      </section>
+
+      <section>
+        <h2>News</h2>
+        <ul class="compact-list">
+          <li><span class="date">2026</span> Research intern at Huawei Hong Kong Research Center, Theory Lab, working on FlexNPU resource sharing and scheduling.</li>
+          <li><span class="date">2025</span> Completed final year project on KV cache compression for LLM inference optimization.</li>
+          <li><span class="date">2024</span> Received First Prize and Group Award in ASC Student Supercomputer Challenge.</li>
+        </ul>
+      </section>
+
+      <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Large language model inference optimization and serving systems</li>
+          <li>KV cache compression, memory-efficient decoding, and quality-aware approximation</li>
+          <li>Heterogeneous GPU/NPU resource sharing, RPC, shared memory, and operator scheduling</li>
+          <li>Retrieval-augmented generation, hybrid search, and domain-specific question answering</li>
+          <li>High-performance computing and AI infrastructure</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Selected Publication</h2>
+        <div class="publication">
+          <p>
+            <strong>Retrieval-Augmented Generation for Embodied Carbon Analysis of Computing Devices.</strong>
+          </p>
+          <p>
+            Short paper, 2024. DOI:
+            <a href="https://doi.org/10.1145/3671127.3698699">10.1145/3671127.3698699</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Research Experience</h2>
+
+        <div class="item">
+          <div class="item-heading">
+            <h3>LLM Inference Optimization via KV Cache Compression</h3>
+            <span>Nov 2024 - Apr 2025</span>
+          </div>
+          <p class="meta">Final Year Project, The Hong Kong Polytechnic University</p>
+          <p>
+            Worked on KV cache compression for efficient LLM inference under the supervision of Prof. Zhaorui Zhang and Dr. Xin Yao from Huawei. I evaluated cuSZp compression components, used vLLM to host LLMs, modified FlashAttention interfaces to integrate compression without changing vLLM kernels, and measured perplexity on WikiText-103 under different error bounds.
+          </p>
+          <p class="highlight">Outcome: compressed KV cache to 40% of the original size while preserving output quality.</p>
+        </div>
+
+        <div class="item">
+          <div class="item-heading">
+            <h3>FlexNPU Resource Sharing System</h3>
+            <span>Oct 2025 - Jun 2026</span>
+          </div>
+          <p class="meta">Research Intern, Huawei Hong Kong Research Center, Theory Lab</p>
+          <p>
+            Worked on a client-server system that intercepts and forwards CANN API calls for elastic NPU resource sharing. I implemented a shared memory transmission model, designed client thread reuse with thread-local slots, and refactored the server-side thread architecture with polling and adaptive worker threads.
+          </p>
+          <p class="highlight">Outcome: reduced server CPU load from 300% to 160%, with only 3.87% LLM inference throughput decrease.</p>
+        </div>
+
+        <div class="item">
+          <div class="item-heading">
+            <h3>Retrieval-Augmented Generation for Embodied Carbon Analysis</h3>
+            <span>May 2024 - Sep 2024</span>
+          </div>
+          <p class="meta">Research Assistant, Faculty of Engineering, The Hong Kong Polytechnic University</p>
+          <p>
+            Built a domain-specific RAG system for analyzing embodied carbon of computing devices. I processed industry reports with PDF parsing and OCR tools, evaluated embedding models, implemented local vector retrieval, explored distance functions, built hybrid vector-keyword search, and designed a module for carbon value computation.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="item">
+          <div class="item-heading">
+            <h3>The Chinese University of Hong Kong</h3>
+            <span>2025 - 2026</span>
+          </div>
+          <p class="meta">MSc in Computer Science</p>
+        </div>
+        <div class="item">
+          <div class="item-heading">
+            <h3>The Hong Kong Polytechnic University</h3>
+            <span>2021 - 2025</span>
+          </div>
+          <p class="meta">BSc (Hons) Scheme in Computing, First Class Honors; Minor in Applied Mathematics; Overall weighted GPA: 3.62/4.3.</p>
+        </div>
+      </section>
+
+      <section id="awards">
+        <h2>Awards</h2>
+        <ul>
+          <li>Hong Kong Government Scholarship - Talent Development Scholarship</li>
+          <li>Dean's Honor List, Faculty of Engineering, The Hong Kong Polytechnic University</li>
+          <li>ASC 2024 Student Supercomputer Challenge First Prize</li>
+          <li>ASC 2024 Student Supercomputer Challenge Group Award</li>
+          <li>Outstanding Student, Artificial Intelligence Training Camp at Shanghai Jiao Tong University</li>
+          <li>Chinese Physics Olympiad Second Prize</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <p>
+          Python, PyTorch, LangChain, NumPy, pandas, scikit-learn, vLLM, SGLang, C++, CUDA/NPU programming concepts, RPC, shared memory, vector databases, OCR, and document processing.
+        </p>
+      </section>
+    </article>
   </main>
 </body>
 </html>
