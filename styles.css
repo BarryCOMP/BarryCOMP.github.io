@@ -183,6 +183,12 @@ em {
   font-size: 1em;
 }
 
+.author__name span {
+  color: #7a8288;
+  font-size: .85em;
+  font-weight: normal;
+}
+
 .author__bio {
   margin: .25em 0 0;
   color: #7a8288;
